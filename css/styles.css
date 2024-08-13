@@ -28,9 +28,6 @@ header > .bg-header {
     top: 50%;
     transform: translate(-50%,-50%);
 }
-section{
-    background-image: url(img/bg-modal.png);
-}
 section hr {
     margin-bottom: 5rem;
 }
@@ -130,7 +127,7 @@ nav .container-fluid div{
 }
 
 #portfolio button:after, #experience button:after {
-    content: url(img/zoom.svg);
+    content: url(../img/zoom.svg);
     left: 50%;
     opacity: 0;
     position: absolute;
@@ -142,7 +139,7 @@ nav .container-fluid div{
 }
 
 #portfolio button.experience:after, #experience button.experience:after {
-    content: url(img/briefcase.svg);
+    content: url(../img/briefcase.svg);
     left: 46.5%;
     width: 35%;
     transform: translate(-40%,-50%);
