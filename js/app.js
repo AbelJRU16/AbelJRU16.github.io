@@ -289,9 +289,9 @@ function changePorfolio(param){
 	let currentPortfolio = document.querySelector("#currentPortfolio").value;
 	let index = 0;
 	if(param == "minus"){
-		index = (currentPortfolio != 0) ? --currentPortfolio : (porfolio.length - 1);
+		index = (currentPortfolio != 0) ? --currentPortfolio : (porfolio[CURRENT_LANGUAGE].length - 1);
 	}else{
-		index = (currentPortfolio == (porfolio.length - 1)) ? 0 : ++currentPortfolio;
+		index = (currentPortfolio == (porfolio[CURRENT_LANGUAGE].length - 1)) ? 0 : ++currentPortfolio;
 	}
 	showPorfolio(index);
 }
@@ -300,9 +300,9 @@ function changeExperience(param){
 	let currentExperience = document.querySelector("#currentExperience").value;
 	let index = 0;
 	if(param == "minus"){
-		index = (currentExperience != 0) ? --currentExperience : (experience.length - 1);
+		index = (currentExperience != 0) ? --currentExperience : (experience[CURRENT_LANGUAGE].length - 1);
 	}else{
-		index = (currentExperience == (experience.length - 1)) ? 0 : ++currentExperience;
+		index = (currentExperience == (experience[CURRENT_LANGUAGE].length - 1)) ? 0 : ++currentExperience;
 	}
 	showResume(index);
 }
